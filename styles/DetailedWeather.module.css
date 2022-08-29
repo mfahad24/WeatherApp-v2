@@ -1,0 +1,126 @@
+.container {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px 20px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  height: 60vh;
+  margin-top: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.singleDayDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.temperature {
+  font-size: 40px;
+}
+
+.image {
+  font-size: 15px;
+  height: 70px;
+}
+
+.dateContainer {
+  margin-bottom: 5px;
+  font-size: 30px;
+}
+
+.description {
+  font-size: 20px;
+}
+
+.header {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50px;
+}
+
+.city {
+  font-size: 25px;
+}
+
+.clickedDay {
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 834px) {
+  .dateContainer {
+    font-size: 20px;
+  }
+
+  .image {
+    height: 60px;
+  }
+
+  .temperature {
+    font-size: 30px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    height: 100%;
+    padding-top: 100px;
+    flex-direction: column;
+  }
+
+  .singleDayDetails {
+    flex-direction: row;
+    margin: 10px;
+    justify-content: space-evenly;
+  }
+
+  .clickedDay {
+    font-size: 25px;
+  }
+
+  .city {
+    font-size: 20px;
+  }
+
+  .dateContainer {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+
+  .image {
+    height: 30px;
+    margin: 0px 10px;
+  }
+
+  .temperature {
+    font-size: 18px;
+  }
+
+  .header {
+    top: 40px;
+  }
+
+  .singleDayDetails > div {
+    width: 60px;
+  }
+}

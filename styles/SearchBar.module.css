@@ -1,0 +1,36 @@
+.searchInputContainer {
+  display: flex;
+}
+
+.searchInput {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px 20px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+}
+
+.searchInput:focus {
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: 0.5s ease;
+}
+
+@media only screen and (max-width: 600px) {
+  .searchInputContainer {
+    flex-direction: column;
+  }
+
+  .searchInput {
+    font-size: 15px;
+  }
+
+  .seachInput::placeholder {
+    color: grey;
+  }
+}
